@@ -15,12 +15,12 @@ Identity Management
 2.	Click Add
 3.	Enter the email address of a new member to whom you have not granted any Cloud IAM role previously. 
 4.	You can remove access my going to IAM and removing the access.
-http://35.233.242.208/nxchallenge/astarisborn
+http://35.233.229.236/nxchallenge/astarisborn
 
 As shown in the illustration on the next page, a Kubernetes Cluster with two nodes running the application is currently setup on GCP.  
 The choice of the location of the nodes and such information can be specified by running specific ‘gcloud’ commands that specify the zones and location of the machines.  Gcloud provides a host of commands under its documentation that I used in this project as seen on the following pages.
 This whole exercise was designed around the configuration of GCP.  Containerization was used to preserve the portability of the code so that it could be easily updated, documented, maintained, and deployed.
-An additional benefit to docker is that you can create a single “master” version of your image to quickly deploy if need be; and hence the reason I created two Docker Containers within a Kubernetes Cluster.
+An additional benefit to docker is that you can create a single “master” version of your image to quickly deploy if need be; and hence the reason I created a Docker Container within a Kubernetes Cluster.
 If you are doing co-development with a team, you can provide them with the resources they need without compromising any information on your own network; thus, enabling developers a productive and continuous feedback loop.
 Python was used as the language and Flask as the templating framework.  Though flask is a lightweight framework, the object of this exercise as a devops engineer is to show importance on the infrastructure than the code itself.  In the real world, I would use a more robust framework like Django and perhaps an ElasticSearch database to handle thousands, or perhaps hundreds of thousands of get requests concurrently so that the quality of enterprise grade performance isn’t compromised.
 
